@@ -1,0 +1,121 @@
+body{
+    background-image: url(imagem/BG.jpg);
+    background-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+h1{
+    font-size: 40px;
+}
+
+.pagina{
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #fff;
+    text-align: center;
+    
+
+}
+p{
+    margin: 30px;
+    text-align: justify;
+}
+.topo{
+    width: 100%;
+    text-align: center;
+    }
+button{
+    text-align: center;
+    color: #FFF;
+    font-size: 15px;
+}
+div[class*=box] {
+    height: 33.33%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+      
+.box-2 { background-color: #0ac853; }
+.box-3 { background-color: #e50b0b; }
+.box-4 { background-color: #9c0be5; }
+.box-5 { background-color: #0b9ce5; }
+
+#texto-beneficio{
+    text-align: justify ;
+    display: none;
+    color: aliceblue;
+    
+}
+#texto-contras{
+    display: none;
+    text-align: justify ;
+    color: aliceblue;
+}
+#texto-conclusao{
+    display: none;
+    text-align: justify ;
+    color: aliceblue;
+}
+#texto-referencias{
+    display: none;
+    text-align: justify ;
+    color: aliceblue;
+}
+.btn {
+    
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+}
+
+.btn-two {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    text-align: left; 
+ 
+  }
+  .btn-two span {
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+  }
+  .btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-two:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255,255,255,0);
+  }
+  .btn-two:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255,255,255,0);
+  }
